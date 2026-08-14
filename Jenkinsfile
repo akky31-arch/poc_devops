@@ -5,7 +5,7 @@ pipeline {
         APP_NAME         = 'poc-devops-app'
         IMAGE_TAG        = "${env.BUILD_NUMBER}"
         AGENT_LABEL      = 'docker'
-        APP_PORT         = '80'
+        APP_PORT         = '3000'
         CONTAINER_PORT   = '3000'
     }
 
