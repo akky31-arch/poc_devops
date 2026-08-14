@@ -32,9 +32,8 @@ pipeline {
             agent { label "${AGENT_LABEL}" }
             steps {
                 unstash 'source'
-                sh '''
-                   This is for testing the application
-                '''
+                echo 'This is for testing the application'
+                
             }
         }       
 
