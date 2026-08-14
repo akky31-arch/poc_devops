@@ -27,6 +27,16 @@ pipeline {
                 '''
             }
         }
+        
+        stage('Test') {
+            agent { label "${AGENT_LABEL}" }
+            steps {
+                unstash 'source'
+                sh '''
+                   This is for testing the application
+                '''
+            }
+        }       
 
         stage('Approval Gateway') {
             agent none
