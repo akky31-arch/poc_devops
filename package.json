@@ -1,0 +1,12 @@
+{
+  "name": "poc-devops-app",
+  "version": "1.0.0",
+  "description": "Sample app for Jenkins multi-agent multi-stage POC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
